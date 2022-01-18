@@ -13,6 +13,14 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {
+    };
+  },
+  created() {
+  },
+  methods: {
   }
 }
 </script>

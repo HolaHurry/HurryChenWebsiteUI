@@ -1,19 +1,22 @@
-import { createApp } from 'vue'
+// import { createApp } from 'vue'
 import App from './App.vue';
 import Vue from 'vue';
 import requests from '@/util/request/requestIndex.js';
 import less from 'less';
 import MagicCheck from 'magic-check/css/magic-check.css';
 import router from './routes/index';
+// import ElementPlus from 'element-plus';
+// import 'element-plus/dist/index.css';
 import './assets/css/common.less';
 import './assets/css/layout.less';
 
-createApp(App).mount('#app');
+// Vue.use(ElementPlus);
 Vue.use(router);
-// new Vue({
-//     router,
-//     render : h => h(App)
-// }).$mount('#app');
+// createApp(App).mount('#app');
+new Vue({
+    router,
+    render : h => h(App)
+}).$mount('#app');
 Vue.use(less);
 Vue.use(MagicCheck);
 Vue.use(requests);

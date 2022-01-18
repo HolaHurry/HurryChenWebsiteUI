@@ -8,8 +8,8 @@ import router from './routes/index';
 import './assets/css/common.less';
 import './assets/css/layout.less';
 
+// Vue.use(router);
 createApp(App).mount('#app');
-Vue.use(router);
 // new Vue({
 //     router,
 //     render : h => h(App)

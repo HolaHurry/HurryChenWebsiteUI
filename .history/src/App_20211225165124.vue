@@ -144,14 +144,9 @@ export default {
   font-weight: 600;
   text-shadow: 1px 1px 5px white;
 }
-.link-font {
-  cursor: pointer;
-}
 .dynamic-index-back-img {
   background-size: 100% auto;
   -moz-background-size: 100% auto;
-  position: fixed;
-  top: 0;
   height: 100%;
   width: 100%;
 }
@@ -159,6 +154,6 @@ export default {
   height: 200px;
 }
 .index-main-body {
-  margin-top: 80px;
+  /* margin-top: 60px; */
 }
 </style>
