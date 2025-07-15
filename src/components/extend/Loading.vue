@@ -7,31 +7,33 @@
 
 <script>
 export default {
-  name: 'Loading',
-}
+  name: "Loading",
+};
 </script>
 
-<style scoped >
-  .load-container .load { 
-    /* Loading方块 */
-    width: 60px;
-    height: 60px;
-    background-color: #1E426E;
-    margin: 50px auto;
-    animation: rotateplane 1.0s infinite ease-in-out;
-  }
+<style scoped>
+.load-container .load {
+  /* Loading方块 */
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #1e426e;
+  margin: 3.125rem auto;
+  animation: rotateplane 1s infinite ease-in-out;
+}
 
-  .load-container .text {
-    text-align: center;
-  }
+.load-container .text {
+  text-align: center;
+}
 
-  @keyframes rotateplane {
-    0% {
-      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    } 50% {
-      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    } 100% {
-      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    }
-  } 
+@keyframes rotateplane {
+  0% {
+    transform: perspective(7.5rem) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(7.5rem) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(7.5rem) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
 </style>
